@@ -3290,10 +3290,10 @@ body.landing #page-wrapper {
 }
 
 #banner img {
-	background: rgba(255, 255, 255, 0.95);
-	padding: 1.5em;
-	border-radius: 10px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	margin-bottom: 20px;
 }
 
 .data-img img {
