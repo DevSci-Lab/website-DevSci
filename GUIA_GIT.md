@@ -11,11 +11,13 @@ Este documento describe los pasos sagrados para trabajar en equipo en el sitio w
 
 1. **Viaja a la rama principal:**
    ```bash
-   git checkout main```
+   git checkout main
+   ```
 
 2. **Baja los últimos cambios de la nube:** Esto asegura que tengas lo que tu compañero subió ayer.
    ```bash
-   git pull origin main```
+   git pull origin main
+   ```
 
 ## 🌿 Fase 2: Creación de tu Rama (Tu espacio seguro)
 Crea una rama paralela para tu tarea específica.
