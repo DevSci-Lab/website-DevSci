@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - DevSciLab{% endblock %}
+{% block body_class %}is-preload{% endblock %}
+
+{% block content %}
+<section class="container medium" id="main">
+ <header>
+  <h2>
+   Cont&aacute;ctenos
+  </h2>
+  <p>
+   Cu&eacute;ntanos qu&eacute; te parece nuestra peque&ntilde;a operaci&oacute;n.
+  </p>
+  <p>
+   <strong>
+    Correo electr&oacute;nico: info@devscilab.com
+   </strong>
+  </p>
+ </header>
+ <div class="box">
+  <form action="#" method="post">
+   <div class="row gtr-50 gtr-uniform">
+    <div class="col-6 col-12-mobilep">
+     <input id="name" name="name" placeholder="Name" type="text" value=""/>
+    </div>
+    <div class="col-6 col-12-mobilep">
+     <input id="email" name="email" placeholder="Email" type="email" value=""/>
+    </div>
+    <div class="col-12">
+     <input id="subject" name="subject" placeholder="Subject" type="text" value=""/>
+    </div>
+    <div class="col-12">
+     <textarea id="message" name="message" placeholder="Enter your message" rows="6"></textarea>
+    </div>
+    <div class="col-12">
+     <ul class="actions special">
+      <li>
+       <input type="submit" value="Send Message"/>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </form>
+ </div>
+</section>
+{% endblock %}
