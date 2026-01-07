@@ -6,7 +6,7 @@ freezer = Freezer(app)
 
 # --- Configuration ---
 # Generate clean URLs (directories with index.html) for static build
-app.config['FREEZER_DESTINATION'] = 'build'
+app.config['FREEZER_DESTINATION'] = 'docs'
 app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_REMOVE_EXTRA_FILES'] = True
 
