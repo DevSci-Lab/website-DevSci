@@ -1,45 +1,58 @@
-{% extends "base.html" %}
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
-{% block title %}DevSciLab - Inicio{% endblock %}
+<head>
+	<title>DevSciLab - Inicio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../static/assets/css/main.css" />
+	
+</head>
 
-{% block body_class %}landing is-preload{% endblock %}
+<body class="landing is-preload">
+	<div id="page-wrapper">
 
-{% block header %}
+		
 <!-- Header -->
 <header id="header" class="alt">
-	<h1><a href="{{ url_for('index_' + lang) }}">DevSciLab</a></h1>
+	<h1><a href="index.html">DevSciLab</a></h1>
 	<nav id="nav">
 		<ul>
 			<li>
-				<a href="{{ url_for(current_page + '_es') }}" class="{{ 'active' if lang == 'es' else '' }}">ES</a> |
-				<a href="{{ url_for(current_page + '_en') }}" class="{{ 'active' if lang == 'en' else '' }}">EN</a>
+				<a href="index.html" class="active">ES</a> |
+				<a href="../en/index.html" class="">EN</a>
 			</li>
-			<li><a href="{{ url_for('index_' + lang) }}">Inicio</a></li>
+			<li><a href="index.html">Inicio</a></li>
 			<li><a href="#quienes-somos">Quiénes Somos</a></li>
 			<li><a href="#servicios">Servicios</a></li>
 			<li>
 				<a href="#" class="icon solid fa-angle-down">Clientes</a>
 				<ul>
-					<li><a href="{{ url_for('researchers_' + lang) }}">Investigadores</a></li>
-					<li><a href="{{ url_for('students_' + lang) }}">Alumnado</a></li>
+					<li><a href="../researchers/index.html">Investigadores</a></li>
+					<li><a href="../students/index.html">Alumnado</a></li>
 				</ul>
 			</li>
 			<li><a href="#cta" class="button">Contacto</a></li>
 		</ul>
 	</nav>
 </header>
-{% endblock %}
 
-{% block content %}
+
+		
 <!-- Banner -->
 <section id="banner">
-	<img src="{{ url_for('static', filename='images/logo-sinfondo.png') }}" alt="DevSciLab"
+	<img src="../static/images/logo-sinfondo.png" alt="DevSciLab"
 		style="max-width: 400px; width: 100%; height: auto; margin-bottom: 20px;" />
 	<p>Portafolios profesionales, Pipelines de Datos Científicos y consultoría de calidad.<br />
 		Diseñado por científicos, para científicos.</p>
 	<ul class="actions special">
-		<li><a href="{{ url_for('researchers_es') }}" class="button primary">Investigadores</a></li>
-		<li><a href="{{ url_for('students_es') }}" class="button">Alumnado</a></li>
+		<li><a href="../researchers/index.html" class="button primary">Investigadores</a></li>
+		<li><a href="../students/index.html" class="button">Alumnado</a></li>
 	</ul>
 </section>
 
@@ -57,7 +70,7 @@
 				el laboratorio con el desarrollo de software y la bioinformática para cerrar la brecha entre la
 				obtención de datos y su publicación exitosa.</p>
 		</header>
-		<span class="image featured"><img src="{{ url_for('static', filename='images/sobre-nosotros (1).jpg') }}"
+		<span class="image featured"><img src="../static/images/sobre-nosotros%20(1).jpg"
 				alt="Equipo DevSciLab" /></span>
 	</section>
 
@@ -100,7 +113,7 @@
 		<div class="col-6 col-12-narrower">
 
 			<section class="box special">
-				<span class="image featured data-img"><img src="{{ url_for('static', filename='images/Dato-1.jpg') }}"
+				<span class="image featured data-img"><img src="../static/images/Dato-1.jpg"
 						alt="Gráficos de datos" style="object-position: top;" /></span>
 				<h3>La brecha salarial y de impacto es digital.</h3>
 				<p>En la era del 'Big Data', la habilidad técnica define el éxito. Según reportes de la
@@ -116,7 +129,7 @@
 		<div class="col-6 col-12-narrower">
 
 			<section class="box special">
-				<span class="image featured data-img"><img src="{{ url_for('static', filename='images/Dato-2.jpg') }}"
+				<span class="image featured data-img"><img src="../static/images/Dato-2.jpg"
 						alt="Publicaciones científicas" /></span>
 				<h3>No dejes que tus datos se pierdan en el "cajón".</h3>
 				<p>Se estima que más del 50% de los estudios científicos nunca se publican, un fenómeno conocido
@@ -141,9 +154,9 @@
 	<h3><a href="mailto:info@devscilab.com" style="text-decoration: none; color: inherit;">info@devscilab.com</a></h3>
 
 </section>
-{% endblock %}
 
-{% block footer %}
+
+		
 <footer id="footer">
 	<ul class="icons">
 	</ul>
@@ -152,4 +165,20 @@
 		<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 	</ul>
 </footer>
-{% endblock %}
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../static/assets/js/jquery.min.js"></script>
+	<script src="../static/assets/js/jquery.dropotron.min.js"></script>
+	<script src="../static/assets/js/jquery.scrollex.min.js"></script>
+	<script src="../static/assets/js/browser.min.js"></script>
+	<script src="../static/assets/js/breakpoints.min.js"></script>
+	<script src="../static/assets/js/util.js"></script>
+	<script src="../static/assets/js/main.js"></script>
+	
+
+</body>
+
+</html>
