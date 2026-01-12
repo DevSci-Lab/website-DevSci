@@ -3068,8 +3068,11 @@ body.landing #page-wrapper {
 
 #header h1 a {
 	color: #fff;
-	font-weight: 400;
-	border: 0;
+	font-weight: 600;
+	font-size: 1.25em;
+	border-style: solid;
+	border-color: #000000;
+
 }
 
 #header nav {
@@ -3105,10 +3108,12 @@ body.landing #page-wrapper {
 }
 
 #header nav>ul>li a:not(.button) {
-	color: #fff;
+	color: #fcfcfc;
 	display: inline-block;
 	text-decoration: none;
 	border: 0;
+	font-weight: bold;
+
 }
 
 #header nav>ul>li a:not(.button).icon:before {
@@ -3279,13 +3284,13 @@ body.landing #page-wrapper {
 
 #banner {
 	background-attachment: scroll, fixed;
-	background-color: #666;
-	background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-	background-position: top left, center center;
-	background-repeat: repeat, no-repeat;
-	background-size: auto, cover;
+	background-color: #6c4e4e;
+	background-image: url("images/synthesis_flask.jpg");
+	background-position: center center;
+	background-repeat: repeat;
+	background-size: cover;
 	color: #fff;
-	padding: 6em 0 10em 0;
+	padding: 8em 0 10em 0;
 	text-align: center;
 }
 
@@ -3312,6 +3317,7 @@ body.landing #page-wrapper {
 #banner h5,
 #banner h6 {
 	color: #fff;
+	font-weight: bold;
 }
 
 #banner h2 {
@@ -3319,11 +3325,13 @@ body.landing #page-wrapper {
 	line-height: 1em;
 	margin: 0 0 0.5em 0;
 	padding: 0;
+	font-weight: bold;
 }
 
 #banner p {
 	font-size: 1.25em;
 	margin-bottom: 1.75em;
+	font-weight: bold;
 }
 
 #banner input[type="submit"],
