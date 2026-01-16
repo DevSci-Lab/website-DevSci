@@ -3284,10 +3284,10 @@ body.landing #page-wrapper {
 
 #banner {
 	background-attachment: scroll, fixed;
-	background-color: #6c4e4e;
-	background-image: url("images/synthesis_flask.jpg");
+	background-color: #2b2b2b;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/synthesis_flask.jpg");
 	background-position: center center;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
 	padding: 15em 0 10em 0;
@@ -3338,32 +3338,48 @@ body.landing #page-wrapper {
 #banner input[type="reset"],
 #banner input[type="button"],
 #banner .button {
-	background-color: transparent;
-	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
 	color: #fff;
 	min-width: 12em;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 #banner input[type="submit"]:hover,
 #banner input[type="reset"]:hover,
 #banner input[type="button"]:hover,
 #banner .button:hover {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.25);
+	transform: scale(1.05);
 }
 
 #banner input[type="submit"]:active,
 #banner input[type="reset"]:active,
 #banner input[type="button"]:active,
 #banner .button:active {
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.35);
 }
 
 #banner input[type="submit"].primary,
 #banner input[type="reset"].primary,
 #banner input[type="button"].primary,
 #banner .button.primary {
-	background: #fff;
-	color: #666 !important;
+	background: #3B82F6;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	color: #ffffff !important;
+	border: none;
+	box-shadow: inset 0 0 0 0 transparent;
+	/* Override default border/shadow */
+}
+
+#banner input[type="submit"].primary:hover,
+#banner input[type="reset"].primary:hover,
+#banner input[type="button"].primary:hover,
+#banner .button.primary:hover {
+	background-color: #2563EB;
+	transform: scale(1.05);
 }
 
 /* Main */
