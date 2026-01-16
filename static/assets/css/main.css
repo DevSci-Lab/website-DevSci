@@ -3290,7 +3290,7 @@ body.landing #page-wrapper {
 	background-repeat: repeat;
 	background-size: cover;
 	color: #fff;
-	padding: 8em 0 10em 0;
+	padding: 15em 0 10em 0;
 	text-align: center;
 }
 
@@ -3528,7 +3528,7 @@ body.landing #main {
 	/* Banner */
 
 	#banner {
-		padding: 1em 0 12em 0;
+		padding: 5em 0 12em 0;
 	}
 
 }
