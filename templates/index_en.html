@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}DevSciLab - Bioinformatics & LIMS{% endblock %}
+{% block title %}DevSciLab{% endblock %}
 
 {% block body_class %}landing is-preload{% endblock %}
 
@@ -32,13 +32,15 @@
 {% block content %}
 <!-- Banner -->
 <section id="banner">
-    <img src="{{ url_for('static', filename='images/logo-sinfondo.png') }}" alt="DevSciLab"
+    <img src="{{ url_for('static', filename='images/logo_dark.png') }}" alt="DevSciLab"
         style="max-width: 400px; width: 100%; height: auto; margin-bottom: 20px;" />
     <p>Professional portfolios, Scientific Data Pipelines, and quality consulting.<br />
         Designed by scientists, for scientists.</p>
     <ul class="actions special">
-        <li><a href="{{ url_for('researchers_en') }}" class="button primary">Researchers</a></li>
-        <li><a href="{{ url_for('students_en') }}" class="button">Students</a></li>
+        <li><a href="{{ url_for('researchers_en') }}" class="button primary"><i class="fa fa-flask" aria-hidden="true"
+                    style="padding-right: 10px;"></i>Researchers</a></li>
+        <li><a href="{{ url_for('students_en') }}" class="button"><i class="fa fa-graduation-cap" aria-hidden="true"
+                    style="padding-right: 10px;"></i>Students</a></li>
     </ul>
 </section>
 
@@ -145,7 +147,7 @@
     <ul class="icons">
     </ul>
     <ul class="copyright">
-        <li>&copy; Untitled. All rights reserved.</li>
+        <li>&copy; DevSciLab. All rights reserved.</li>
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
     </ul>
 </footer>
