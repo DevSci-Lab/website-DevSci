@@ -1,66 +1,207 @@
 {% extends "base.html" %}
 
-{% block title %}DevSciLab - Alumnado{% endblock %}
+{% block title %}DevSciLab - Students{% endblock %}
 {% block body_class %}is-preload{% endblock %}
 
 
 {% block content %}
-<section id="main" class="container">
-	<header>
-		<h2>Impulsa tu Carrera Científica.</h2>
-		<p>Herramientas digitales y mentoría académica especializada para destacar en tu grado, máster o
-			doctorado.</p>
-	</header>
-	<div class="box special features">
-		<div class="features-row">
-			<section>
-				<span class="icon solid major fa-pen-nib accent2"></span>
-				<h3>Redacción Técnica y Capacitación</h3>
-				<p>No dejes que una mala estructura baje tu calificación. Te enseñamos a comunicar ciencia con
-					rigor. A través de mentorías 1 a 1, revisamos la lógica, la metodología y la claridad de tu
-					tesis o paper, ayudándote a argumentar tus resultados como un experto.</p>
-				<blockquote><strong>El Dato:</strong> La "comunicación científica" es citada frecuentemente por
-					directores de tesis como la habilidad blanda (soft skill) más crítica y, a la vez, la más
-					carente en los recién graduados.</blockquote>
-			</section>
-			<section>
-				<span class="icon solid major fa-chart-bar accent3"></span>
-				<h3>Apoyo en Tratamiento de Datos</h3>
-				<p>El mercado laboral actual exige ir más allá de Excel. Te capacitamos en el manejo de datos
-					reales usando herramientas modernas. Ya sea para tu TFG/TFM o para aprender una nueva
-					habilidad, te ayudamos a superar el miedo a la estadística y a la programación básica.</p>
-				<blockquote><strong>El Dato:</strong> Según reportes de LinkedIn Workforce, el análisis de datos
-					es una de las 5 habilidades más demandadas en el sector biotecnológico y farmacéutico para
-					puestos junior.</blockquote>
-			</section>
-		</div>
-		<div class="features-row">
-			<section style="width: 100%;">
-				<span class="icon solid major fa-id-card accent4"></span>
-				<h3>Tu Primer Portafolio Profesional</h3>
-				<p>Un CV en papel ya no es suficiente. Desarrollamos tu sitio web personal para que destaques en
-					solicitudes de máster o doctorado. Muestra tus posters, congresos y habilidades técnicas en
-					un formato que impresione a los reclutadores desde el primer clic.</p>
-				<blockquote><strong>El Dato:</strong> El 56% de los reclutadores valoran más un portafolio
-					online o sitio web personal que cualquier otro material de marca personal (Fuente: Forbes /
-					Branding Statistics).</blockquote>
-			</section>
-		</div>
-		<div class="row" id="contact-area">
-			<div class="col-12" style="text-align: center; margin-top: 2em;">
-				<a href="mailto:info@devscilab.com" class="button primary large">Contacto:
-					info@devscilab.com</a>
-			</div>
-		</div>
-	</div>
+<section class="container" id="main">
+    <header>
+        <h2>
+            Impulsa tu carrera cient&iacute;fica.
+        </h2>
+        <p>
+            Herramientas digitales y tutor&iacute;a acad&eacute;mica especializada para sobresalir en tus estudios.
+        </p>
+    </header>
+    <div class="box special features" style="margin-top: -3em;">
+        <div class="row" style="padding-bottom: 2em; border-bottom: solid 2px #e5e5e5; margin-bottom: 2em;">
+            <div class="col-12" id="plans">
+                <header class="major" style="margin-bottom: 2em; margin-top: 0;">
+                    <h3>
+                        Selecciona tu plan
+                    </h3>
+                </header>
+                <div class="pricing-wrapper">
+                    <div class="pricing-table">
+                        <div class="head">
+                            <h4 class="title">
+                                Paquete de enfoque
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h2>
+                                    80&euro;
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    3 sesiones de mentor&iacute;a (45 min)
+                                </li>
+                                <li>
+                                    Revisi&oacute;n de estructura y l&oacute;gica.
+                                </li>
+                                <li>
+                                    Resoluci&oacute;n de dudas puntuales
+                                </li>
+                            </ul>
+                            <div class="sign-up">
+                                <a class="btn bordered radius"
+                                    href="mailto:info@devscilab.com?subject=Focus Pack Inquiry">
+                                    Preguntar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-table">
+                        <div class="head">
+                            <h4 class="title">
+                                Paquete de lanzamiento
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h2 style="font-size: 1.2em; line-height: 1.2em; padding-top: 1.2em;">
+                                    20&euro;
+                                </h2>
+                            </div>
+                            <p style="font-size: 0.8em; margin: 1em 0 1em 0; color: #555;">
+                                (Precio Sujeto a Evaluaci&oacute;n)
+                            </p>
+                            <ul>
+                                <li>
+                                    Soporte final y pulido
+                                </li>
+                                <li>
+                                    Portafolio Simple (CV Digital)
+                                </li>
+                                <li>
+                                    Marca personal
+                                </li>
+                            </ul>
+                            <div class="sign-up">
+                                <a class="btn bordered radius"
+                                    href="mailto:info@devscilab.com?subject=Launch Pack Inquiry">
+                                    Preguntar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-table">
+                        <div class="head">
+                            <h4 class="title">
+                                Rescate de datos
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h2 style="font-size: 1.2em; line-height: 1.2em; padding-top: 1.2em;">
+                                    20&euro;
+                                </h2>
+                            </div>
+                            <p style="font-size: 0.8em; margin: 1em 0 1em 0; color: #555;">
+                                (Precio Sujeto a Evaluaci&oacute;n)
+                            </p>
+                            <ul>
+                                <li>
+                                    Limpieza de datos
+                                </li>
+                                <li>
+                                    Compatibilidad con trazado/gr&aacute;ficos
+                                </li>
+                                <li>
+                                    Tutor&iacute;a sobre herramientas.
+                                </li>
+                            </ul>
+                            <div class="sign-up">
+                                <a class="btn bordered radius"
+                                    href="mailto:info@devscilab.com?subject=Data Rescue Inquiry">
+                                    Preguntar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-row">
+            <section>
+                <span class="icon solid major fa-pen-nib accent2">
+                </span>
+                <h3>
+                    Redacci&oacute;n t&eacute;cnica y formaci&oacute;n
+                </h3>
+                <p>
+                    No permita que una mala estructura reduzca su calificaci&oacute;n. Te ense&ntilde;amos c&oacute;mo
+                    comunicar la ciencia con
+                    rigor. A trav&eacute;s de tutor&iacute;a 1 a 1, revisamos la l&oacute;gica, metodolog&iacute;a y
+                    claridad de tu
+                    tesis o art&iacute;culo, ayud&aacute;ndote a argumentar tus resultados como un experto.
+                </p>
+            </section>
+            <section>
+                <span class="icon solid major fa-chart-bar accent3">
+                </span>
+                <h3>
+                    Soporte de an&aacute;lisis de datos
+                </h3>
+                <p>
+                    El mercado laboral actual exige ir m&aacute;s all&aacute; de Excel. Te capacitamos en el manejo de
+                    datos del mundo actual,
+                    utilizando herramientas modernas. Ya sea para tu proyecto final o para aprender una nueva habilidad,
+                    te ayudamos a
+                    superar el miedo a las estad&iacute;sticas y a la programaci&oacute;n b&aacute;sica.
+                </p>
+            </section>
+        </div>
+        <div class="features-row">
+            <section style="width: 100%;">
+                <span class="icon solid major fa-id-card accent4">
+                </span>
+                <h3>
+                    Tu primer portafolio profesional
+                </h3>
+                <p>
+                    Un CV en papel ya no es suficiente. Desarrollamos tu sitio web personal para ayudarte a destacar en
+                    solicitudes de maestr&iacute;a o doctorado. Muestra tus carteles, conferencias y habilidades
+                    t&eacute;cnicas en un
+                    formato que impresiona a los reclutadores desde el primer clic.
+                </p>
+                <blockquote>
+                    <strong>
+                        Hecho:
+                    </strong>
+                    El 56% de los reclutadores crean una primera impresi&oacute;n m&aacute;s s&oacute;lida de un
+                    portafolio en l&iacute;nea o sitio web personal que cualquier otro material de marca personal
+                    (Fuente:
+                    Forbes / Estad&iacute;sticas de marca).
+                </blockquote>
+            </section>
+        </div>
+        <div class="row" id="contact-area">
+            <div class="col-12" style="text-align: center; margin-top: 2em;">
+                <a class="button primary large" href="mailto:info@devscilab.com">
+                    Contacto: info@devscilab.com
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}
 
 {% block footer %}
 <footer id="footer">
-	<ul class="copyright">
-		<li>&copy; Untitled. All rights reserved.</li>
-		<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-	</ul>
+    <ul class="copyright">
+        <li>
+            &copy; Sin t&iacute;tulo. Reservados todos los derechos.
+        </li>
+        <li>
+            Dise&ntilde;o:
+            <a href="http://html5up.net">
+                HTML5 ARRIBA
+            </a>
+        </li>
+    </ul>
 </footer>
 {% endblock %}

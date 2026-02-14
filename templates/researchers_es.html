@@ -1,81 +1,267 @@
 {% extends "base.html" %}
 
-{% block title %}DevSciLab - Investigadores{% endblock %}
+{% block title %}DevSciLab - Researchers{% endblock %}
 {% block body_class %}is-preload{% endblock %}
 
 
 {% block content %}
-<section id="main" class="container">
-	<header>
-		<h2>Optimiza el flujo de tu investigación.</h2>
-		<p>Delega el procesamiento de datos y la documentación técnica. Recupera tiempo valioso para la ciencia.
-		</p>
-	</header>
-	<div class="box special features">
-		<div class="features-row">
-			<section>
-				<span class="icon solid major fa-cogs accent2"></span>
-				<h3>Herramientas de Análisis Personalizadas</h3>
-				<p>Más allá de la automatización, garantizamos la reproducibilidad. Diseñamos pipelines en
-					Python que estandarizan el tratamiento de tus datos crudos, eliminando la variabilidad
-					manual que ocurre al usar hojas de cálculo. Desde la captura instrumental hasta el gráfico
-					final, creamos un flujo auditable y robusto.</p>
-				<blockquote><strong>El Dato:</strong> Según Nature, más del 70% de los investigadores han
-					fallado al intentar reproducir el experimento de otro científico. La causa principal suele
-					ser el procesamiento manual de datos no documentado.</blockquote>
-			</section>
-			<section>
-				<span class="icon solid major fa-laptop-code accent3"></span>
-				<h3>Portafolios Científicos</h3>
-				<p>Tu impacto no debe limitarse a un PDF. Construimos tu identidad digital para centralizar
-					publicaciones, proyectos de investigación y colaboraciones en un solo lugar. Un sitio web
-					profesional facilita que pares internacionales y financiadores encuentren y validen tu
-					trabajo sin intermediarios.</p>
-				<blockquote><strong>El Dato:</strong> Un estudio de ResearchGate indica que la visibilidad
-					online correlaciona directamente con el índice de citas. Los investigadores con presencia
-					web activa reciben hasta un 20% más de oportunidades de colaboración internacional.
-				</blockquote>
-			</section>
-		</div>
-		<div class="features-row">
-			<section>
-				<span class="icon solid major fa-dna accent4"></span>
-				<h3>Bioinformática y Traducción</h3>
-				<p>La barrera del idioma no debe ocultar la calidad de tu ciencia. Ofrecemos traducción técnica
-					y edición de estilo para manuscritos de alto impacto (Q1), asegurando que la terminología
-					médica y estadística sea precisa. Además, apoyamos en la interpretación de grandes volúmenes
-					de datos biológicos.</p>
-				<blockquote><strong>El Dato:</strong> Editores de Elsevier reportan que entre el 30% y 50% de
-					los rechazos iniciales se deben a una redacción deficiente en inglés, independientemente de
-					la calidad científica del estudio.</blockquote>
-			</section>
-			<section>
-				<span class="icon solid major fa-file-alt accent5"></span>
-				<h3>Gestión Documental de Laboratorio</h3>
-				<p>Transformamos el caos administrativo en un sistema de gestión del conocimiento. Ayudamos a
-					redactar y estructurar Manuales de Calidad y PNOs (Procedimientos Normalizados de Operación)
-					claros y visuales. Reducimos la curva de aprendizaje para nuevos tesistas y aseguramos la
-					continuidad del laboratorio.</p>
-				<blockquote><strong>El Dato:</strong> Se estima que un nuevo integrante de laboratorio tarda
-					hasta 6 meses en ser plenamente productivo. Una documentación interna clara puede reducir
-					este tiempo de inducción en un 40%.</blockquote>
-			</section>
-		</div>
-		<div class="row" id="contact-area">
-			<div class="col-12" style="text-align: center; margin-top: 2em;">
-				<a href="mailto:info@devscilab.com" class="button primary large">Contacto:
-					info@devscilab.com</a>
-			</div>
-		</div>
-	</div>
+<section class="container" id="main">
+    <header>
+        <h2>
+            Optimice su flujo de trabajo de investigaci&oacute;n.
+        </h2>
+        <p>
+            Delegar el tratamiento de datos y documentaci&oacute;n t&eacute;cnica. Recuperar tiempo valioso para la
+            ciencia.
+        </p>
+    </header>
+    <div class="box special features" style="margin-top: -3em;">
+        <div class="row" style="padding-bottom: 2em; border-bottom: solid 2px #e5e5e5; margin-bottom: 2em;">
+            <div class="col-12" id="plans">
+                <header class="major" style="margin-bottom: 2em; margin-top: 0;">
+                    <h3>
+                        Selecciona tu plan
+                    </h3>
+                </header>
+                <div class="pricing-wrapper researcher-theme">
+                    <div class="pricing-table">
+                        <div class="head">
+                            <h4 class="title">
+                                Identidad de laboratorio digital
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h2 style="font-size: 1.2em; line-height: 1.2em; padding-top: 1.2em;">
+                                    Desde 30&euro;
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    Sitio web de varias p&aacute;ginas
+                                </li>
+                                <li>
+                                    Secciones modificables
+                                </li>
+                            </ul>
+                            <div class="sign-up">
+                                <a class="btn bordered radius"
+                                    href="mailto:info@devscilab.com?subject=Digital Lab Identity Inquiry">
+                                    Preguntar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-table">
+                        <div class="head">
+                            <h4 class="title">
+                                Soporte de publicaci&oacute;n
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h2 style="font-size: 1.2em; line-height: 1.2em; padding-top: 1.2em;">
+                                    Desde 50&euro;
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    Pautas de formato de revista
+                                </li>
+                                <li>
+                                    Carta de presentaci&oacute;n al editor
+                                </li>
+                            </ul>
+                            <div class="sign-up">
+                                <a class="btn bordered radius"
+                                    href="mailto:info@devscilab.com?subject=Publication Support Inquiry">
+                                    Preguntar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-table">
+                        <div class="head">
+                            <h4 class="title">
+                                Piloto de automatizaci&oacute;n
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h2 style="font-size: 1.2em; line-height: 1.2em; padding-top: 1.2em;">
+                                    Desde 50&euro;
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    Sesi&oacute;n "Conocimiento inicial de datos"
+                                </li>
+                                <li>
+                                    Desarrollo de un script Java/Python
+                                </li>
+                                <li>
+                                    Documentaci&oacute;n de uso
+                                </li>
+                                <li>
+                                    Propuesta escalable
+                                </li>
+                            </ul>
+                            <div class="sign-up">
+                                <a class="btn bordered radius"
+                                    href="mailto:info@devscilab.com?subject=Automation Pilot Inquiry">
+                                    Preguntar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-table">
+                        <div class="head">
+                            <h4 class="title">
+                                Identidad del grupo de laboratorio
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h2 style="font-size: 1.2em; line-height: 1.2em; padding-top: 1.2em;">
+                                    Desde 30&euro;
+                                </h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    Portafolio editable completo
+                                </li>
+                            </ul>
+                            <div class="sign-up">
+                                <a class="btn bordered radius"
+                                    href="mailto:info@devscilab.com?subject=Lab Group Identity Inquiry">
+                                    Preguntar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-row">
+            <section>
+                <span class="icon solid major fa-cogs accent2">
+                </span>
+                <h3>
+                    Herramientas de an&aacute;lisis personalizadas
+                </h3>
+                <p>
+                    M&aacute;s all&aacute; de la automatizaci&oacute;n, garantizamos la reproducibilidad.
+                    Dise&ntilde;amos pipelines Python que estandarizan
+                    procesamiento de datos sin procesar, eliminando la variabilidad manual inherente a las hojas de
+                    c&aacute;lculo. De
+                    Desde la captura del instrumento hasta la trama final, creamos un flujo de trabajo robusto y
+                    auditable.
+                </p>
+                <blockquote>
+                    <strong>
+                        Hecho:
+                    </strong>
+                    Seg&uacute;n Nature, m&aacute;s del 70% de los investigadores no han logrado
+                    reproducir los experimentos de otro cient&iacute;fico. El procesamiento manual de datos no
+                    documentados es a menudo el
+                    causa primaria.
+                </blockquote>
+            </section>
+            <section>
+                <span class="icon solid major fa-laptop-code accent3">
+                </span>
+                <h3>
+                    Portafolios cient&iacute;ficos
+                </h3>
+                <p>
+                    Su impacto no deber&iacute;a limitarse a un PDF. Construimos tu identidad digital para centralizar
+                    publicaciones, proyectos de investigaci&oacute;n y colaboraciones en un solo lugar. Un sitio web
+                    profesional
+                    facilita que sus pares y financiadores internacionales encuentren y validen su trabajo directamente.
+                </p>
+                <blockquote>
+                    <strong>
+                        Hecho:
+                    </strong>
+                    Un estudio de ResearchGate indica que la visibilidad en l&iacute;nea
+                    se correlaciona directamente con las tasas de citaci&oacute;n. Los investigadores con presencia
+                    activa en la web reciben hasta
+                    hasta un 20% m&aacute;s de oportunidades de colaboraci&oacute;n internacional.
+                </blockquote>
+            </section>
+        </div>
+        <div class="features-row">
+            <section>
+                <span class="icon solid major fa-dna accent4">
+                </span>
+                <h3>
+                    Bioinform&aacute;tica y traducci&oacute;n
+                </h3>
+                <p>
+                    Las barreras del idioma no deber&iacute;an oscurecer la calidad de su ciencia. Ofrecemos servicios
+                    t&eacute;cnicos
+                    traducci&oacute;n y edici&oacute;n de estilo para manuscritos de alto impacto (Q1), asegurando
+                    precisi&oacute;n m&eacute;dica y
+                    terminolog&iacute;a estad&iacute;stica. Adem&aacute;s, apoyamos la interpretaci&oacute;n de grandes
+                    factores biol&oacute;gicos.
+                    conjuntos de datos.
+                </p>
+                <blockquote>
+                    <strong>
+                        Hecho:
+                    </strong>
+                    Los editores de Elsevier informan que entre el 30% y el 50% de los rechazos iniciales
+                    se deben a una mala redacci&oacute;n en ingl&eacute;s, independientemente de la calidad
+                    cient&iacute;fica del estudio.
+                </blockquote>
+            </section>
+            <section>
+                <span class="icon solid major fa-file-alt accent5">
+                </span>
+                <h3>
+                    Gesti&oacute;n de documentaci&oacute;n de laboratorio
+                </h3>
+                <p>
+                    Transformamos el caos administrativo en un sistema de gesti&oacute;n del conocimiento. Ayudamos a
+                    redactar y
+                    Estructurar manuales de calidad y SOP (procedimientos operativos est&aacute;ndar) claros y visuales.
+                    reducimos
+                    la curva de aprendizaje de los nuevos estudiantes y asegurar la continuidad operativa del
+                    laboratorio.
+                </p>
+                <blockquote>
+                    <strong>
+                        Hecho:
+                    </strong>
+                    Se estima que un nuevo miembro del laboratorio tarda hasta 6 meses en
+                    ser plenamente productivo. Una documentaci&oacute;n interna clara puede reducir este tiempo de
+                    incorporaci&oacute;n en un 40%.
+                </blockquote>
+            </section>
+        </div>
+        <div class="row" id="contact-area">
+            <div class="col-12" style="text-align: center; margin-top: 2em;">
+                <a class="button primary large" href="mailto:info@devscilab.com">
+                    Contacto: info@devscilab.com
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}
 
 {% block footer %}
 <footer id="footer">
-	<ul class="copyright">
-		<li>&copy; Untitled. All rights reserved.</li>
-		<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-	</ul>
+    <ul class="copyright">
+        <li>
+            &copy; Sin t&iacute;tulo. Reservados todos los derechos.
+        </li>
+        <li>
+            Dise&ntilde;o:
+            <a href="http://html5up.net">
+                HTML5 ARRIBA
+            </a>
+        </li>
+    </ul>
 </footer>
 {% endblock %}
