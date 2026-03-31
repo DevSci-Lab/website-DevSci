@@ -247,7 +247,7 @@ h6 {
 	color: #1A202C;
 	font-weight: 300;
 	line-height: 1em;
-	margin: 0 0 0.5em 0;
+	margin: 0.5em 0 0.5em 0;
 }
 
 h1 a,
@@ -4091,4 +4091,178 @@ body.landing #main {
 		right: 4.5em;
 		font-size: 0.8em;
 	}
+}
+
+/* Plans Section */
+#plans details {
+	margin-bottom: 1em;
+	border: 1px solid #e5e5e5;
+	border-radius: 6px;
+	padding: 0.5em;
+	text-align: left;
+}
+
+#plans summary {
+	cursor: pointer;
+	font-weight: bold;
+	outline: none;
+}
+
+#plans .student-plan summary {
+	color: #e44c65;
+}
+
+#plans .researcher-plan summary {
+	color: #3d4449;
+}
+
+#plans ul {
+	margin: 0.5em 0 0 1.5em;
+	font-size: 0.9em;
+	text-align: left;
+}
+
+#plans small {
+	font-size: 0.8em;
+}
+
+
+/* Pricing Tables */
+.pricing-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 15px;
+	margin: 2em 0;
+	padding: 0;
+}
+
+.pricing-table {
+	box-shadow: 0px 0px 18px #ccc;
+	text-align: center;
+	padding: 30px 0px;
+	border-radius: 5px;
+	position: relative;
+	background: #fff;
+}
+
+.pricing-table .head {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 50px;
+	transition: all 0.5s ease;
+}
+
+.pricing-table:hover .head {
+	border-bottom: 1px solid #e44c65;
+	/* Default accent color */
+}
+
+.pricing-table .head .title {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #333;
+}
+
+.pricing-table .content .price {
+	background: linear-gradient(to right, #e44c65 0%, #c0392b 100%);
+	width: 90px;
+	height: 90px;
+	margin: auto;
+	line-height: 90px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	box-shadow: 0px 0px 10px #ccc;
+	margin-top: -50px;
+	transition: all 0.5s ease;
+	color: #fff;
+}
+
+.pricing-table:hover .content .price {
+	transform: scale(1.1);
+}
+
+.pricing-table .content .price h2 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 80px;
+	/* Vertically center */
+	margin: 0;
+	justify-content: center;
+	/* Centers horizontally */
+	align-items: center;
+	/* Centers vertically */
+}
+
+.pricing-table .content ul {
+	list-style-type: none;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-left: 0;
+}
+
+.pricing-table .content ul li {
+	margin: 10px 0px;
+	font-size: 14px;
+	color: #555;
+	padding: 0 10px;
+}
+
+.pricing-table .content .sign-up {
+	background: linear-gradient(to right, #e44c65 0%, #c0392b 100%);
+	border-radius: 40px;
+	font-weight: 500;
+	position: relative;
+	display: inline-block;
+}
+
+.pricing-table .btn {
+	color: #fff;
+	padding: 10px 30px;
+	display: inline-block;
+	text-align: center;
+	font-weight: 600;
+	transition: all 0.3s linear;
+	border: none;
+	font-size: 14px;
+	text-transform: capitalize;
+	position: relative;
+	text-decoration: none;
+	margin: 2px;
+	z-index: 9;
+	border-radius: 50px;
+}
+
+.pricing-table .btn:hover {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+
+.pricing-table .btn.bordered {
+	background: transparent;
+	color: #e44c65;
+	border: 1px solid #e44c65;
+	z-index: 50;
+}
+
+.pricing-table:hover .btn.bordered {
+	color: #fff !important;
+	background: #e44c65;
+}
+
+/* Specific colors for Researcher plans to differentiate */
+.researcher-theme .pricing-table:hover .head {
+	border-bottom: 1px solid #3d4449;
+}
+
+.researcher-theme .content .price,
+.researcher-theme .content .sign-up,
+.researcher-theme:hover .btn.bordered {
+	background: linear-gradient(to right, #3d4449 0%, #2b3033 100%);
+	border-color: #3d4449;
+}
+
+.researcher-theme .btn.bordered {
+	color: #3d4449;
+	border-color: #3d4449;
 }
