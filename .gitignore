@@ -2,4 +2,6 @@
 __pycache__
 *.code-workspace
 *.svg
+.venv
+venv/
 venv
