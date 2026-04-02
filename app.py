@@ -1,78 +1,66 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 from flask_frozen import Freezer
+from flask_flatpages import FlatPages
+import os
 
 app = Flask(__name__)
-freezer = Freezer(app)
 
 # --- Configuration ---
-# Generate clean URLs (directories with index.html) for static build
 app.config['FREEZER_DESTINATION'] = 'docs'
 app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_REMOVE_EXTRA_FILES'] = True
 
-# --- Routes ---
-# We use specific function names (e.g., index_es, contact_en) because base.html
-# relies on them for logic like url_for(current_page + '_' + lang).
-# The URLs are mapped to be "clean" (no .html extension).
-# IMPORTANT: Trailing slashes are required for Frozen-Flask to generate folders (e.g. /contact/index.html)
+app.config['FLATPAGES_EXTENSION'] = '.md'
+app.config['FLATPAGES_ROOT'] = 'content/blog'
 
+pages = FlatPages(app)
+freezer = Freezer(app)
+
+# --- Dynamic Routes ---
 @app.route('/')
-def index():
-    # Redirect root to ES version or render directly
+def index_root():
     return render_template('index_es.html', current_page='index', lang='es')
 
-@app.route('/es/')
-def index_es():
-    return render_template('index_es.html', current_page='index', lang='es')
+@app.route('/<lang>/')
+def index(lang):
+    if lang not in ['es', 'en']:
+        abort(404)
+    return render_template(f'index_{lang}.html', current_page='index', lang=lang)
 
-@app.route('/en/')
-def index_en():
-    return render_template('index_en.html', current_page='index', lang='en')
+@app.route('/<lang>/<page>/')
+def render_page(lang, page):
+    if lang not in ['es', 'en']:
+        abort(404)
+    template_name = f'{page}_{lang}.html'
+    if not os.path.exists(os.path.join(app.root_path, 'templates', template_name)):
+        abort(404)
+    return render_template(template_name, current_page=page, lang=lang)
 
-# --- Researchers ---
-@app.route('/researchers/')
-def researchers_es():
-    return render_template('researchers_es.html', current_page='researchers', lang='es')
+# --- Blog Routes ---
+@app.route('/<lang>/blog/')
+def blog_list(lang):
+    if lang not in ['es', 'en']:
+        abort(404)
+    # Get all pages and filter by language
+    articles = [p for p in pages if p.meta.get('lang') == lang and p.meta.get('category')]
+    # Sort them by date
+    articles.sort(key=lambda item: item.meta.get('date', ''), reverse=True)
+    return render_template('blog.html', current_page='blog', lang=lang, articles=articles)
 
-@app.route('/researchers-en/')
-def researchers_en():
-    return render_template('researchers_en.html', current_page='researchers', lang='en')
+@app.route('/<lang>/blog/category/<category>/')
+def blog_category(lang, category):
+    if lang not in ['es', 'en']:
+        abort(404)
+    articles = [p for p in pages if p.meta.get('lang') == lang and str(p.meta.get('category', '')).lower() == category.lower()]
+    articles.sort(key=lambda item: item.meta.get('date', ''), reverse=True)
+    return render_template('blog.html', current_page='blog', lang=lang, articles=articles, selected_category=category.title())
 
-# --- Students ---
-@app.route('/students/')
-def students_es():
-    return render_template('students_es.html', current_page='students', lang='es')
-
-@app.route('/students-en/')
-def students_en():
-    return render_template('students_en.html', current_page='students', lang='en')
-
-# --- Contact ---
-@app.route('/contact/')
-def contact_es():
-    return render_template('contact_es.html', current_page='contact', lang='es')
-
-@app.route('/contact-en/')
-def contact_en():
-    return render_template('contact_en.html', current_page='contact', lang='en')
-
-# --- Generic ---
-@app.route('/generic/')
-def generic_es():
-    return render_template('generic_es.html', current_page='generic', lang='es')
-
-@app.route('/generic-en/')
-def generic_en():
-    return render_template('generic_en.html', current_page='generic', lang='en')
-
-# --- Elements ---
-@app.route('/elements/')
-def elements_es():
-    return render_template('elements_es.html', current_page='elements', lang='es')
-
-@app.route('/elements-en/')
-def elements_en():
-    return render_template('elements_en.html', current_page='elements', lang='en')
+@app.route('/<lang>/blog/<path:path>/')
+def blog_post(lang, path):
+    post = pages.get_or_404(path)
+    if post.meta.get('lang') != lang:
+        abort(404)
+    return render_template('post.html', current_page='blog', lang=lang, post=post)
 
 if __name__ == '__main__':
     app.run(debug=True)

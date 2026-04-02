@@ -32,7 +32,7 @@ Nomenclatura recomendada: ```nombre/tarea-corta```
 ```git checkout -b nombre/nombre-de-tu-tarea```
 
 ## 💾 Fase 3: Trabajo y Guardado
-Edita los archivos HTML, CSS o añade imágenes. Cuando termines por hoy:
+Edita los archivos HTML, Markdown (para el blog), CSS o añade imágenes. Cuando termines por hoy:
 
 1. Verifica qué archivos modificaste (Opcional): Verás en rojo lo que cambiaste.
     ```git status```
@@ -82,4 +82,4 @@ Ahora ve a GitHub.com para fusionar tu trabajo con el proyecto principal.
 4. Guarda (Commit merge).
 
 -------------------------
-DevSci Lab - Workflow v1.0
+DevSci Lab - Workflow v1.1

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.meta.title }} - DevSciLab{% endblock %}
+{% block body_class %}is-preload{% endblock %}
+
+{% block content %}
+<section class="container" id="main">
+    <header>
+        <h2>{{ post.meta.title }}</h2>
+        <p>
+            {{ post.meta.date }}
+            {% if post.meta.category %}
+            | <a href="{{ url_for('blog_category', lang=lang, category=post.meta.category|lower) }}">{{
+                post.meta.category }}</a>
+            {% endif %}
+        </p>
+    </header>
+    <div class="box">
+        {{ post.html|safe }}
+        <hr>
+        <a href="{{ url_for('blog_list', lang=lang) }}" class="button">{{ 'Volver al Blog' if lang == 'es' else 'Back to
+            Blog' }}</a>
+    </div>
+</section>
+{% endblock %}

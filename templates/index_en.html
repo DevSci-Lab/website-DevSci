@@ -6,21 +6,22 @@
 
 {% block header %}
 <header id="header" class="alt">
-    <h1><a href="{{ url_for('index_' + lang) }}">DevSciLab</a></h1>
+    <h1><a href="{{ url_for('index', lang=lang) }}">DevSciLab</a></h1>
     <nav id="nav">
         <ul>
             <li>
-                <a href="{{ url_for(current_page + '_es') }}" class="{{ 'active' if lang == 'es' else '' }}">ES</a> |
-                <a href="{{ url_for(current_page + '_en') }}" class="{{ 'active' if lang == 'en' else '' }}">EN</a>
+                <a href="{{ url_for('index', lang='es') }}" class="{{ 'active' if lang == 'es' else '' }}">ES</a> |
+                <a href="{{ url_for('index', lang='en') }}" class="{{ 'active' if lang == 'en' else '' }}">EN</a>
             </li>
-            <li><a href="{{ url_for('index_' + lang) }}">Home</a></li>
+            <li><a href="{{ url_for('index', lang=lang) }}">Home</a></li>
+            <li><a href="{{ url_for('blog_list', lang=lang) }}">Blog</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li>
                 <a href="#" class="icon solid fa-angle-down">Clients</a>
                 <ul>
-                    <li><a href="{{ url_for('researchers_' + lang) }}">Researchers</a></li>
-                    <li><a href="{{ url_for('students_' + lang) }}">Students</a></li>
+                    <li><a href="{{ url_for('render_page', page='researchers', lang=lang) }}">Researchers</a></li>
+                    <li><a href="{{ url_for('render_page', page='students', lang=lang) }}">Students</a></li>
                 </ul>
             </li>
             <li><a href="#cta" class="button">Contact Us</a></li>
@@ -37,10 +38,10 @@
     <p>Professional portfolios, Scientific Data Pipelines, and quality consulting.<br />
         Designed by scientists, for scientists.</p>
     <ul class="actions special">
-        <li><a href="{{ url_for('researchers_en') }}" class="button primary"><i class="fa fa-flask" aria-hidden="true"
-                    style="padding-right: 10px;"></i>Researchers</a></li>
-        <li><a href="{{ url_for('students_en') }}" class="button"><i class="fa fa-graduation-cap" aria-hidden="true"
-                    style="padding-right: 10px;"></i>Students</a></li>
+        <li><a href="{{ url_for('render_page', page='researchers', lang='en') }}" class="button primary"><i
+                    class="fa fa-flask" aria-hidden="true" style="padding-right: 10px;"></i>Researchers</a></li>
+        <li><a href="{{ url_for('render_page', page='students', lang='en') }}" class="button"><i
+                    class="fa fa-graduation-cap" aria-hidden="true" style="padding-right: 10px;"></i>Students</a></li>
     </ul>
 </section>
 

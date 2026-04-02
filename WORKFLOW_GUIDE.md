@@ -4,44 +4,56 @@ Esta guía documenta el ciclo de vida completo del desarrollo del sitio web, des
 
 ## 1. Desarrollo y Edición (Flask) -> `edit`
 
-El sitio utiliza **Flask** para el desarrollo local. Esto permite usar plantillas (Jinja2) para evitar código repetido (como encabezados y pies de página).
+El sitio utiliza **Flask** para el desarrollo local. ¡La arquitectura actual usa Auto-Descubrimiento! Esto significa que **no necesitas modificar el archivo Python de código (`app.py`)** para agregar nuevas secciones.
 
-*   **Archivos a editar**:
-    *   Edita principalmente los archivos en **Inglés** (`templates/*_en.html`).
-    *   La estructura común (menú, footer) está en `templates/base.html`.
-*   **Comando de inicio**:
+*   **Páginas de Secciones Estáticas (HTML)**:
+    *   Edita y crea principalmente los archivos en **Inglés** dentro de la carpeta (ej. `templates/nueva_pagina_en.html`).
+    *   La estructura común (menú de navegación, pie de página) está centralizada en `templates/base.html`.
+    *   Flask creará la ruta en vivo automáticamente `/<lang>/<nombre_pagina>/`.
+*   **Páginas de Artículos/Blogs (Markdown)**:
+    *   No necesitas HTML. Para crear una nueva publicación, ve a la carpeta `content/blog/` y crea un archivo `.md`.
+    *   Al inicio de tu `.md`, usa el Frontmatter (metadatos) para definir formato:
+        ```yaml
+        title: "Mi Título"
+        date: "2026-04-01"
+        category: "Tecnología"
+        lang: es
+        ---
+        Contenido...
+        ```
+    *   El Blog indexará estos artículos y sus categorías de forma autónoma.
+*   **Comando de inicio local**:
     ```bash
     python app.py
     ```
 *   **Visualización**: Abre tu navegador en `http://127.0.0.1:5000/`.
 
-## 2. Traducción Automática y Revisión -> `translate`
+## 2. Traducción y Revisión -> `translate`
 
-Una vez que has editado y finalizado una página en inglés, utiliza el script de traducción para generar la versión en español.
+Una vez que has editado y finalizado una página, necesitas crear su contraparte en el otro idioma.
 
-*   **Comando de traducción**:
+*   **Traducción de Páginas HTML (Automático)**:
     ```bash
     python translate_site.py templates/nombre_pagina_en.html
     ```
-    *Ejemplo:* `python translate_site.py templates/researchers_en.html`
-*   **Resultado**: Se generará o actualizará `templates/researchers_es.html`.
-*   **Revisión Manual (CRÍTICO)**:
-    *   La traducción automática no es perfecta.
-    *   Abre el archivo generado (`templates/*_es.html`) en tu editor.
-    *   Corrige textos, ajusta el tono y verifica que el formato HTML no se haya roto.
-    *   Refresca el navegador local (`http://127.0.0.1:5000/researchers/`) para verificar.
+    *   *Resultado*: Generará/actualizará `templates/nombre_pagina_es.html`.
+    *   *Revisión Manual (CRÍTICO)*: Revisa el `_es.html` resultante para pulir las frases desde el editor de código.
+
+*   **Traducción de Artículos de Blog (Manual)**:
+    *   Crea una copia del archivo `.md` (ej. cópialo y cámbiale nombre a `-es.md`).
+    *   Asegúrate de cambiar la etiqueta dentro del archivo de `lang: en` a `lang: es` y traduce el texto directamente en el editor.
 
 ## 3. Generación de Sitio Estático -> `build`
 
-Cuando todo el contenido (Inglés y Español) esté revisado y aprobado, genera los archivos HTML estáticos para subir a producción (GitHub Pages).
+Cuando todo el contenido de ambos idiomas esté aprobado, genera los archivos HTML estáticos y rutas dinámicas.
 
 *   **Comando de generación**:
     ```bash
     python freeze.py
     ```
 *   **Resultado**:
-    *   Se crea una carpeta `build/` en la raíz del proyecto.
-    *   Esta carpeta contiene el sitio web completo y estático. **Nota:** Se generarán carpetas para cada página (ej: `build/contact/index.html`) para soportar URLs limpias.
-*   **Prueba Final**:
-    *   Abre el archivo `build/index.html` en tu navegador para una última verificación visual.
-    *   Sube el contenido de la carpeta `build/` (o todo el repo, según tu configuración de deploy) a GitHub.
+    *   Se crea o actualiza la carpeta `docs/` en la raíz del proyecto.
+    *   Las plantillas descubiertas y los `.md` se estructuran en carpetas para soportar URLs limpias (ej: `docs/es/contact/index.html` o `docs/es/blog/category/tecnologia/index.html`).
+*   **Prueba Final y Deploy**:
+    *   Revisa tu carpeta `docs/` para ver el resultado limpio.
+    *   Realiza un "git push" de la la rama para GitHub Pages (Sabiendo que GitHub leerá la carpeta de `docs/`).

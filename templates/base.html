@@ -21,17 +21,24 @@
 		{% block header %}
 		<!-- Header -->
 		<header id="header">
-			<h1><a href="{{ url_for('index') }}">DevSciLab</a></h1>
+			<h1><a href="{{ url_for('index_root') }}">DevSciLab</a></h1>
 			<nav id="nav">
 				<ul>
 					<li>
-						<a href="{{ url_for(current_page + '_es') }}"
-							class="{{ 'active' if lang == 'es' else '' }}">ES</a> |
-						<a href="{{ url_for(current_page + '_en') }}"
-							class="{{ 'active' if lang == 'en' else '' }}">EN</a>
+						{% if current_page == 'index' %}
+						<a href="{{ url_for('index', lang='es') }}" class="{{ 'active' if lang == 'es' else '' }}">ES</a> |
+						<a href="{{ url_for('index', lang='en') }}" class="{{ 'active' if lang == 'en' else '' }}">EN</a>
+						{% elif current_page == 'blog' %}
+						<a href="{{ url_for('blog_list', lang='es') }}" class="{{ 'active' if lang == 'es' else '' }}">ES</a> |
+						<a href="{{ url_for('blog_list', lang='en') }}" class="{{ 'active' if lang == 'en' else '' }}">EN</a>
+						{% else %}
+						<a href="{{ url_for('render_page', page=current_page, lang='es') }}" class="{{ 'active' if lang == 'es' else '' }}">ES</a> |
+						<a href="{{ url_for('render_page', page=current_page, lang='en') }}" class="{{ 'active' if lang == 'en' else '' }}">EN</a>
+						{% endif %}
 					</li>
-					<li><a href="{{ url_for('index_' + lang) }}">Home</a></li>
-					<li><a href="{{ url_for('contact_' + lang) }}" class="button">Contact</a></li>
+					<li><a href="{{ url_for('index', lang=lang) }}">Home</a></li>
+					<li><a href="{{ url_for('blog_list', lang=lang) }}">Blog</a></li>
+					<li><a href="{{ url_for('render_page', page='contact', lang=lang) }}" class="button">Contact</a></li>
 				</ul>
 			</nav>
 		</header>

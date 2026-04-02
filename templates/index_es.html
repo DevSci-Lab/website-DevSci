@@ -7,24 +7,29 @@
 {% block header %}
 <header class="alt" id="header">
     <h1>
-        <a href="{{ url_for('index_' + lang) }}">
+        <a href="{{ url_for('index', lang=lang) }}">
             DevSciLab
         </a>
     </h1>
     <nav id="nav">
         <ul>
             <li>
-                <a class="{{ 'active' if lang == 'es' else '' }}" href="{{ url_for(current_page + '_es') }}">
+                <a class="{{ 'active' if lang == 'es' else '' }}" href="{{ url_for('index', lang='es') }}">
                     ES
                 </a>
                 |
-                <a class="{{ 'active' if lang == 'en' else '' }}" href="{{ url_for(current_page + '_en') }}">
+                <a class="{{ 'active' if lang == 'en' else '' }}" href="{{ url_for('index', lang='en') }}">
                     EN
                 </a>
             </li>
             <li>
-                <a href="{{ url_for('index_' + lang) }}">
+                <a href="{{ url_for('index', lang=lang) }}">
                     Inicio
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('blog_list', lang=lang) }}">
+                    Blog
                 </a>
             </li>
             <li>
@@ -43,12 +48,12 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="{{ url_for('researchers_' + lang) }}">
+                        <a href="{{ url_for('render_page', page='researchers', lang=lang) }}">
                             Investigadores
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url_for('students_' + lang) }}">
+                        <a href="{{ url_for('render_page', page='students', lang=lang) }}">
                             Estudiantes
                         </a>
                     </li>
@@ -76,14 +81,14 @@
     </p>
     <ul class="actions special">
         <li>
-            <a class="button primary" href="{{ url_for('researchers_es') }}">
+            <a class="button primary" href="{{ url_for('render_page', page='researchers', lang='es') }}">
                 <i aria-hidden="true" class="fa fa-flask" style="padding-right: 10px;">
                 </i>
                 Investigadores
             </a>
         </li>
         <li>
-            <a class="button" href="{{ url_for('students_es') }}">
+            <a class="button" href="{{ url_for('render_page', page='students', lang='es') }}">
                 <i aria-hidden="true" class="fa fa-graduation-cap" style="padding-right: 10px;">
                 </i>
                 Estudiantes

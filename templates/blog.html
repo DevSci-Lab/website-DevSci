@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Blog - DevSciLab{% endblock %}
+{% block body_class %}is-preload{% endblock %}
+
+{% block content %}
+<section class="container" id="main">
+    <header>
+        <h2>Blog</h2>
+        <p>
+            {% if selected_category %}
+            {{ 'Artículos en la categoría:' if lang == 'es' else 'Articles in category:' }}
+            <strong>{{ selected_category }}</strong>
+            <br>
+            <a href="{{ url_for('blog_list', lang=lang) }}" class="button small" style="margin-top: 10px;">
+                {{ 'Ver todos' if lang == 'es' else 'View all' }}
+            </a>
+            {% else %}
+            {{ 'Últimas novedades y artículos' if lang == 'es' else 'Latest news and articles' }}
+            {% endif %}
+        </p>
+    </header>
+
+    <div class="row">
+        {% for article in articles %}
+        <div class="col-6 col-12-mobilep">
+            <section class="box">
+                <h3><a href="{{ url_for('blog_post', lang=lang, path=article.path) }}">{{ article.meta.title }}</a></h3>
+                <p>
+                    <small>
+                        {{ article.meta.date }}
+                        {% if article.meta.category %}
+                        | <a href="{{ url_for('blog_category', lang=lang, category=article.meta.category|lower) }}">{{
+                            article.meta.category }}</a>
+                        {% endif %}
+                    </small>
+                </p>
+            </section>
+        </div>
+        {% else %}
+        <div class="col-12">
+            <p>{{ 'No hay artículos aún.' if lang == 'es' else 'No articles yet.' }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
