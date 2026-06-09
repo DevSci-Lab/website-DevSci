@@ -47,11 +47,19 @@ def blog_list(lang):
     articles.sort(key=lambda item: item.meta.get('date', ''), reverse=True)
     return render_template('blog.html', current_page='blog', lang=lang, articles=articles)
 
+def has_category(page, category_name):
+    cat = page.meta.get('category')
+    if not cat:
+        return False
+    if isinstance(cat, list):
+        return any(str(c).strip().lower() == category_name.strip().lower() for c in cat)
+    return str(cat).strip().lower() == category_name.strip().lower()
+
 @app.route('/<lang>/blog/category/<category>/')
 def blog_category(lang, category):
     if lang not in ['es', 'en']:
         abort(404)
-    articles = [p for p in pages if p.meta.get('lang') == lang and str(p.meta.get('category', '')).lower() == category.lower()]
+    articles = [p for p in pages if p.meta.get('lang') == lang and has_category(p, category)]
     articles.sort(key=lambda item: item.meta.get('date', ''), reverse=True)
     return render_template('blog.html', current_page='blog', lang=lang, articles=articles, selected_category=category.title())
 

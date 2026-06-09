@@ -4266,3 +4266,77 @@ body.landing #main {
 	color: #3d4449;
 	border-color: #3d4449;
 }
+
+/* Blog Post Content Styling */
+.blog-post-content {
+	text-align: justify;
+	line-height: 1.85;
+	font-size: 1.15em;
+	color: #333;
+}
+
+.blog-post-content p {
+	text-align: justify;
+	line-height: 1.85;
+	margin-bottom: 1.5em;
+}
+
+.blog-post-content .footnote-link {
+	font-size: 0.75em;
+	vertical-align: super;
+	font-weight: 600;
+	margin-left: 2px;
+	color: #2563EB;
+	text-decoration: none;
+	border-bottom: none;
+	transition: color 0.2s ease-in-out;
+}
+
+.blog-post-content .footnote-link:hover {
+	color: #1d4ed8;
+	text-decoration: underline;
+}
+
+/* Glossary Section Styling */
+.blog-post-content .glossary-section {
+	margin-top: 3.5em;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 2em;
+}
+
+.blog-post-content .glossary-title {
+	font-size: 1.4em;
+	font-weight: 600;
+	margin-bottom: 1em;
+	color: #1A202C;
+}
+
+.blog-post-content .glossary-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.blog-post-content .glossary-item {
+	margin-bottom: 1.25em;
+	line-height: 1.6;
+	font-size: 0.95em;
+	padding-left: 0;
+}
+
+.blog-post-content .glossary-item strong {
+	color: #1A202C;
+	font-weight: 600;
+}
+
+.blog-post-content .glossary-item-back-link {
+	font-size: 0.8em;
+	margin-left: 5px;
+	color: #999;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.blog-post-content .glossary-item-back-link:hover {
+	color: #2563EB;
+}

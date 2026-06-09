@@ -10,12 +10,18 @@
         <p>
             {{ post.meta.date }}
             {% if post.meta.category %}
-            | <a href="{{ url_for('blog_category', lang=lang, category=post.meta.category|lower) }}">{{
-                post.meta.category }}</a>
+            | 
+            {% if post.meta.category is string %}
+            <a href="{{ url_for('blog_category', lang=lang, category=post.meta.category|lower) }}">{{ post.meta.category }}</a>
+            {% else %}
+            {% for cat in post.meta.category %}
+            <a href="{{ url_for('blog_category', lang=lang, category=cat|lower) }}">{{ cat }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            {% endif %}
             {% endif %}
         </p>
     </header>
-    <div class="box">
+    <div class="box blog-post-content">
         {{ post.html|safe }}
         <hr>
         <a href="{{ url_for('blog_list', lang=lang) }}" class="button">{{ 'Volver al Blog' if lang == 'es' else 'Back to

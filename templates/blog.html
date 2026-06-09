@@ -30,8 +30,14 @@
                     <small>
                         {{ article.meta.date }}
                         {% if article.meta.category %}
-                        | <a href="{{ url_for('blog_category', lang=lang, category=article.meta.category|lower) }}">{{
-                            article.meta.category }}</a>
+                        | 
+                        {% if article.meta.category is string %}
+                        <a href="{{ url_for('blog_category', lang=lang, category=article.meta.category|lower) }}">{{ article.meta.category }}</a>
+                        {% else %}
+                        {% for cat in article.meta.category %}
+                        <a href="{{ url_for('blog_category', lang=lang, category=cat|lower) }}">{{ cat }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                        {% endif %}
                         {% endif %}
                     </small>
                 </p>

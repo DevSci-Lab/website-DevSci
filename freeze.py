@@ -27,7 +27,11 @@ def blog_category():
         lang = p.meta.get('lang')
         cat = p.meta.get('category')
         if lang and cat:
-            categories.setdefault(lang, set()).add(str(cat).lower())
+            if isinstance(cat, list):
+                for c in cat:
+                    categories.setdefault(lang, set()).add(str(c).strip().lower())
+            else:
+                categories.setdefault(lang, set()).add(str(cat).strip().lower())
             
     for lang, cats in categories.items():
         for cat in cats:
