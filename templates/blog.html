@@ -28,6 +28,9 @@
                 <h3><a href="{{ url_for('blog_post', lang=lang, path=article.path) }}">{{ article.meta.title }}</a></h3>
                 <p>
                     <small>
+                        {% if article.meta.author %}
+                        {{ 'Por' if lang == 'es' else 'By' }} {{ article.meta.author }} | 
+                        {% endif %}
                         {{ article.meta.date }}
                         {% if article.meta.category %}
                         | 

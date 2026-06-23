@@ -8,6 +8,9 @@
     <header>
         <h2>{{ post.meta.title }}</h2>
         <p>
+            {% if post.meta.author %}
+            {{ 'Por' if lang == 'es' else 'By' }} {{ post.meta.author }} | 
+            {% endif %}
             {{ post.meta.date }}
             {% if post.meta.category %}
             | 

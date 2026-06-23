@@ -1,5 +1,6 @@
 title: "La regla de las reglas: Cómo la previsibilidad mata el aura"
 date: "2026-05-31"
+author: "Silvia Ramírez"
 category: ["Filosofía", "Biología", "Sociedad", "Ciencia"]
 lang: es 
 ---
