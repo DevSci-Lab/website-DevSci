@@ -1,5 +1,6 @@
 from flask import Flask, render_template, abort
 from flask_frozen import Freezer
+# pyrefly: ignore [missing-import]
 from flask_flatpages import FlatPages
 import os
 
@@ -11,7 +12,7 @@ app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_REMOVE_EXTRA_FILES'] = True
 
 app.config['FLATPAGES_EXTENSION'] = '.md'
-app.config['FLATPAGES_ROOT'] = 'content/blog'
+app.config['FLATPAGES_ROOT'] = 'content'
 
 pages = FlatPages(app)
 freezer = Freezer(app)
