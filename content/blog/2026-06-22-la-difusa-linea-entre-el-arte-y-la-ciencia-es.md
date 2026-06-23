@@ -16,10 +16,10 @@ Mucho antes de que la cuántica moderna explicara los orbitales de los electrone
 Esta relación prevalece hoy en día, existen proyectos, como los apoyados por la American Chemical Society <a href="#glosario-1" id="link-1" class="footnote-link">[1]</a>, que llevan esta conexión a la "sonificación" <a href="#glosario-8" id="link-8" class="footnote-link">[8]</a>; con la cual científicos han logrado convertir el espectro de luz <a href="#glosario-3" id="link-3" class="footnote-link">[3]</a> o las frecuencias vibratorias de las moléculas en frecuencias de audio. Gracias a esto, ya no solo imaginamos los modelos atómicos; ahora podemos "escuchar" cómo suena la estructura interna del oro, del carbono o de las proteínas.
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0;">
-  <img src="/static/images/dif-lin-1.png" alt="Difusa línea entre el arte y la ciencia 1" style="width: 100%; border-radius: 8px;">
-  <img src="/static/images/dif-lin-2.png" alt="Difusa línea entre el arte y la ciencia 2" style="width: 100%; border-radius: 8px;">
-  <img src="/static/images/dif-lin-3.png" alt="Difusa línea entre el arte y la ciencia 3" style="width: 100%; border-radius: 8px;">
-  <img src="/static/images/dif-lin-4.png" alt="Difusa línea entre el arte y la ciencia 4" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-1.jpg" alt="Difusa línea entre el arte y la ciencia 1" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-2.jpg" alt="Difusa línea entre el arte y la ciencia 2" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-3.jpg" alt="Difusa línea entre el arte y la ciencia 3" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-4.jpg" alt="Difusa línea entre el arte y la ciencia 4" style="width: 100%; border-radius: 8px;">
 </div>
 
 La música no es la única manifestación artística escondida en la ciencia. De hecho, la frontera entre ambas disciplinas es profundamente difusa. Pienso en la primera vez que vi imágenes de microscopía de barrido (SEM) <a href="#glosario-7" id="link-7" class="footnote-link">[7]</a> y transmisión (TEM) <a href="#glosario-9" id="link-9" class="footnote-link">[9]</a>; revivieron de inmediato mi pasión por la fotografía y la pintura. Al sentarme a procesar estas imágenes con herramientas como Fiji <a href="#glosario-4" id="link-4" class="footnote-link">[4]</a>, para cuantificar la muestra, es inevitable notar que los resultados no son solo datos empíricos. Las redes celulares o las singulares estructuras bacterianas forman composiciones de una belleza natural asombrosa, dignas de un museo de arte contemporáneo. Esta conexión la hemos visto a lo largo de la historia: desde los cuadernos anatómicos de Da Vinci hasta los fascinantes dibujos de las neuronas de Ramón y Cajal, demostrando que el arte ha sido siempre la herramienta por excelencia para observar y entender la vida. 

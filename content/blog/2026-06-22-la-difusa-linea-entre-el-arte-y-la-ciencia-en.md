@@ -16,10 +16,10 @@ Long before modern quantum mechanics explained electron orbitals, the chemist Jo
 This relationship prevails today, there are projects, like those supported by the American Chemical Society <a href="#glosary-1" id="link-1" class="footnote-link">[1]</a>, that take this connection to "sonification" <a href="#glosary-8" id="link-8" class="footnote-link">[8]</a>; with which scientists have managed to convert the light spectrum <a href="#glosary-3" id="link-3" class="footnote-link">[3]</a> or the vibrational frequencies of molecules into audio frequencies. Thanks to this, we no longer just imagine atomic models; now we can "hear" what the internal structure of gold, carbon or proteins sounds like.
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0;">
-  <img src="/static/images/dif-lin-1.png" alt="The blurred line between art and science 1" style="width: 100%; border-radius: 8px;">
-  <img src="/static/images/dif-lin-2.png" alt="The blurred line between art and science 2" style="width: 100%; border-radius: 8px;">
-  <img src="/static/images/dif-lin-3.png" alt="The blurred line between art and science 3" style="width: 100%; border-radius: 8px;">
-  <img src="/static/images/dif-lin-4.png" alt="The blurred line between art and science 4" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-1.jpg" alt="The blurred line between art and science 1" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-2.jpg" alt="The blurred line between art and science 2" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-3.jpg" alt="The blurred line between art and science 3" style="width: 100%; border-radius: 8px;">
+  <img src="/static/images/dif-lin-4.jpg" alt="The blurred line between art and science 4" style="width: 100%; border-radius: 8px;">
 </div>
 
 Music is not the only artistic manifestation hidden in science. In fact, the border between both disciplines is profoundly blurred. I think of the first time I saw images from scanning electron microscopy (SEM) <a href="#glosary-7" id="link-7" class="footnote-link">[7]</a> and transmission (TEM) <a href="#glosary-9" id="link-9" class="footnote-link">[9]</a>; they immediately revived my passion for photography and painting. Sitting down to process these images with tools like Fiji <a href="#glosary-4" id="link-4" class="footnote-link">[4]</a>, to quantify the sample, it is inevitable to notice that the results are not just empirical data. Cellular networks or singular bacterial structures form compositions of astonishing natural beauty, worthy of a contemporary art museum. We have seen this connection throughout history: from Da Vinci's anatomical notebooks to Ramón y Cajal's fascinating drawings of neurons, demonstrating that art has always been the tool par excellence to observe and understand life.
