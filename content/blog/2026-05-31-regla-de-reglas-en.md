@@ -1,5 +1,6 @@
 title: "The Rule of Rules: How Predictability Kills the Aura"
 date: "2026-05-31"
+author: "Silvia Ramírez"
 category: ["Philosophy", "Biology", "Society", "Science"]
 lang: en 
 ---
