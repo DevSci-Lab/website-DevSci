@@ -15,7 +15,7 @@ Mucho antes de que la cuántica moderna explicara los orbitales de los electrone
 
 Esta relación prevalece hoy en día, existen proyectos, como los apoyados por la American Chemical Society <a href="#glosario-1" id="link-1" class="footnote-link">[1]</a>, que llevan esta conexión a la "sonificación" <a href="#glosario-8" id="link-8" class="footnote-link">[8]</a>; con la cual científicos han logrado convertir el espectro de luz <a href="#glosario-3" id="link-3" class="footnote-link">[3]</a> o las frecuencias vibratorias de las moléculas en frecuencias de audio. Gracias a esto, ya no solo imaginamos los modelos atómicos; ahora podemos "escuchar" cómo suena la estructura interna del oro, del carbono o de las proteínas.
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; width: 60%; margin-left: auto; margin-right: auto;">
   <img src="/static/images/dif-lin-1.jpg" alt="Difusa línea entre el arte y la ciencia 1" style="width: 100%; border-radius: 8px;">
   <img src="/static/images/dif-lin-2.jpg" alt="Difusa línea entre el arte y la ciencia 2" style="width: 100%; border-radius: 8px;">
   <img src="/static/images/dif-lin-3.jpg" alt="Difusa línea entre el arte y la ciencia 3" style="width: 100%; border-radius: 8px;">
