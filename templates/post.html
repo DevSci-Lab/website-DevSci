@@ -25,7 +25,8 @@
         </p>
     </header>
     <div class="box blog-post-content">
-        {{ post.html|safe }}
+        {% set static_prefix = url_for('static', filename='assets/css/main.css')|replace('assets/css/main.css', '') %}
+        {{ post.html|replace('src="/static/', 'src="' + static_prefix)|replace("src='/static/", "src='" + static_prefix)|safe }}
         <hr>
         <a href="{{ url_for('blog_list', lang=lang) }}" class="button">{{ 'Volver al Blog' if lang == 'es' else 'Back to
             Blog' }}</a>
