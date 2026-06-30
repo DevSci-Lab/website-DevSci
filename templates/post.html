@@ -9,16 +9,18 @@
         <h2>{{ post.meta.title }}</h2>
         <p>
             {% if post.meta.author %}
-            {{ 'Por' if lang == 'es' else 'By' }} {{ post.meta.author }} | 
+            {{ 'Por' if lang == 'es' else 'By' }} {{ post.meta.author }} |
             {% endif %}
             {{ post.meta.date }}
             {% if post.meta.category %}
-            | 
+            |
             {% if post.meta.category is string %}
-            <a href="{{ url_for('blog_category', lang=lang, category=post.meta.category|lower) }}">{{ post.meta.category }}</a>
+            <a href="{{ url_for('blog_category', lang=lang, category=post.meta.category|lower) }}">{{ post.meta.category
+                }}</a>
             {% else %}
             {% for cat in post.meta.category %}
-            <a href="{{ url_for('blog_category', lang=lang, category=cat|lower) }}">{{ cat }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ url_for('blog_category', lang=lang, category=cat|lower) }}">{{ cat }}</a>{% if not loop.last %},
+            {% endif %}
             {% endfor %}
             {% endif %}
             {% endif %}
@@ -26,10 +28,24 @@
     </header>
     <div class="box blog-post-content">
         {% set static_prefix = url_for('static', filename='assets/css/main.css')|replace('assets/css/main.css', '') %}
-        {{ post.html|replace('src="/static/', 'src="' + static_prefix)|replace("src='/static/", "src='" + static_prefix)|safe }}
+        {{ post.html|replace('src="/static/', 'src="' + static_prefix)|replace("src='/static/", "src='" +
+        static_prefix)|safe }}
         <hr>
         <div class="gofundme-banner" style="text-align: center; margin: 3em 0;">
-            <img src="{{ url_for('static', filename='images/gofundme_qr.png') }}" alt="GoFundMe QR Code" style="max-width: 350px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <img src="{{ url_for('static', filename='images/gofundme_qr.png') }}" alt="GoFundMe QR Code"
+                style="max-width: 350px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="box" id="gofundme-box">
+                <p>
+                    {{ 'Si te gusta el contenido del blog y quieres apoyar la creación y mantenimiento del blog,
+                    considera hacer una donación a través de GoFundMe. Proyecto: ' if lang == 'es' else 'If you like the
+                    content of
+                    the blog and want to support the creation and maintenance of this blog, consider making a donation
+                    through GoFundMe. Project:' }} <a href="https://gofund.me/f4a5c671b">Impulsando la Educación
+                        Científica y el Pensamiento Crítico</a>
+                </p>
+                <a href="https://gofund.me/3556b91c" class="button">{{ 'Dona ahora' if lang == 'es' else 'Donate now'
+                    }}</a>
+            </div>
         </div>
         <a href="{{ url_for('blog_list', lang=lang) }}" class="button">{{ 'Volver al Blog' if lang == 'es' else 'Back to
             Blog' }}</a>
