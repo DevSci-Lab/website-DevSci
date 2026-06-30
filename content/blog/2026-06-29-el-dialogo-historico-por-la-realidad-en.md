@@ -1,0 +1,85 @@
+---
+title: "The Historical Dialogue for Reality | Science and Philosophy"
+date: "2026-06-29"
+author: "Silvia Ramírez"
+category: ["Ciencia", "Filosofía"]
+lang: en
+---
+
+In our previous article we explored how art and science can share the same canvas. Today, we delve into a space of shared reflection. I continuously hear the belief that Science—backed by the empirical method, reproducibility, and data—and Philosophy—guided by its logic, its ethics, and its uncomfortable questions—maintain two separate perspectives. However, rather than isolated disciplines, they are fundamental allies, a seemingly contradictory but deeply complementary attempt to understand our environment.
+
+It is enough to remember Thales of Miletus, considered simultaneously the first philosopher and one of the first scientists in history. For him, observing nature and reflecting on its meaning were exactly the same exercise.
+
+Where science gives us the natural and structural basis, philosophy is the meaning value. Historically, science was born from 'natural philosophy', but with the Scientific Revolution it decided to become independent. Since then, it seems that both claim to have the best answer to understand reality. But, what if both are right? What happens if instead of competing, we observe how they complement and support each other?
+
+How do we know that what we know is true? On the one hand, science brings the rigor of empiricism <a href="#glosario-4" id="link-4" class="footnote-link">[4]</a> and evidence, arguing that the most solid way to know reality is by measuring it. We know that we cannot trust human intuition because it is full of biases, so we need tools. If we want to know what the inside of a cell looks like, we do not sit down to meditate; we prepare a sample and observe it through a microscope. Science grounds us by saying: 'If I can measure it, quantify it, and reproduce it in another laboratory under the same conditions, then it is true'.
+
+This is where philosophy – with figures like Karl Popper – steps in to complement the picture: it reminds us of the problem of induction <a href="#glosario-7" id="link-7" class="footnote-link">[7]</a>, warning that our instruments only show us what they are designed to show. Philosophy helps science maintain humility, arguing that absolute truths are not always proven, but rather temporary models are created that have not yet been refuted. After all, the images from microscopes or genomic sequences <a href="#glosario-10" id="link-10" class="footnote-link">[10]</a> do not speak for themselves; they pass through the filter of the human mind. Philosophy reminds science that pure objectivity is an ideal, and that knowledge advances by tearing down its own past truths.
+
+**Reductionism and complexity**
+
+To untangle a complex problem, science divides it into its smallest parts. From this perspective, the universe is an immense clockwork mechanism: if you understand the gears (genes, atoms, molecules), you understand the whole machine. This is known as reductionism <a href="#glosario-9" id="link-9" class="footnote-link">[9]</a>.
+
+Philosophy enriches this vision by contributing the concepts of emergentism <a href="#glosario-3" id="link-3" class="footnote-link">[3]</a> and holism <a href="#glosario-6" id="link-6" class="footnote-link">[6]</a>, maintaining that the whole is much more than the sum of its parts. A bunch of connected neurons do not by themselves explain consciousness, love, or suffering. A line of code in Python or Java does not explain the comprehensive purpose of the software. By reducing life to mere biochemical reactions or equations, we run the risk of losing sight of the big picture. Explaining how the neurons in our brain fire when listening to music does not explain what it feels like to listen to that music. Both visions, the micro and the macro, are needed to have the complete picture.
+
+**Is wanting being able to?**
+
+Science advances driven by inertia and curiosity, always seeking to push the frontier of knowledge. Today we can edit DNA with CRISPR <a href="#glosario-2" id="link-2" class="footnote-link">[2]</a>, develop automation algorithms to analyze thousands of cells in seconds, or create advanced artificial intelligences. Technical and technological knowledge is our best tool to solve the great problems of humanity.
+
+However, it is bioethics <a href="#glosario-1" id="link-1" class="footnote-link">[1]</a>—a branch of philosophy—that acts as the Quality Control (QA/QC <a href="#glosario-8" id="link-8" class="footnote-link">[8]</a>) department of our own progress. Just because we can do something does not mean we should do it. It is common to observe how humanity believes that science can simply create artificial replacements for nature and for what we have been given. Philosophy makes us question this, inviting us to think that, instead of using science to manufacture substitutes or evade the consequences of our actions, we should focus on remedying the damage we cause through the abusive use of our environment. If we can edit embryos to avoid diseases, where do we draw the line to avoid falling into eugenics <a href="#glosario-5" id="link-5" class="footnote-link">[5]</a>? If we create algorithms that automate decisions, who is responsible when they fail? Science gives us immense power, but it is philosophy that gives us the compass to perhaps understand the direction to guide us.
+
+In the end, both positions are desperately needed. Science without philosophy runs the risk of becoming technocratic <a href="#glosario-11" id="link-11" class="footnote-link">[11]</a>, blind to its own consequences and lacking humanity. On the other hand, philosophy without science remains in armchair speculation, disconnected from the material reality of the universe.
+
+We can recover an integrative vision and be 'amphibians'. That is, anchor one foot in the empirical rigor of the laboratory and the other in the critical reflection of our actions. Only when science and philosophy dialogue and hold hands does isolated knowledge transform into true wisdom.
+
+But this wisdom requires stepping out of the laboratory; in the end, no discipline works in a vacuum. This is where the importance of living in community lies: understanding our social environments, nourishing ourselves with diverse currents of thought, and working on ethical values. Supporting multidisciplinary work is understanding that progress is, above all, a joint effort. Therefore, since scientific advancement and social structure always go hand in hand, the upcoming articles in the blog will maintain this vision of multidisciplinary work, and we will change scale to delve into the dynamics of social struggle and the fundamental role that collectives play together with biodiversity.
+
+<div class="glossary-section">
+    <h3 class="glossary-title">Glossary</h3>
+    <ul class="glossary-list">
+        <li id="glosario-1" class="glossary-item">
+            <strong>[1] Bioethics:</strong> A branch of philosophy and ethics dedicated to providing fundamental principles to regulate human conduct towards life (human, animal, and plant), evaluating the moral limits of medical and biological advancements.
+            <a href="#link-1" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-2" class="glossary-item">
+            <strong>[2] CRISPR:</strong> (Clustered Regularly Interspaced Short Palindromic Repeats). An innovative biological technology that acts as "molecular scissors", allowing scientists to edit, cut, or modify DNA sequences in a highly precise, fast, and economical manner.
+            <a href="#link-2" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-3" class="glossary-item">
+            <strong>[3] Emergentism:</strong> A school of thought that argues that complex systems develop new (emergent) properties that cannot be explained simply by studying their individual parts separately.
+            <a href="#link-3" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-4" class="glossary-item">
+            <strong>[4] Empiricism:</strong> A philosophical doctrine and pillar of the modern scientific method that emphasizes that all legitimate knowledge comes from experience, direct observation, and evidence obtained through the senses or measuring instruments.
+            <a href="#link-4" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-5" class="glossary-item">
+            <strong>[5] Eugenics:</strong> A social philosophy and practice that seeks to apply the biological laws of inheritance to "perfect" or genetically alter the human species. Historically, it has triggered serious human rights violations and profound ethical debates.
+            <a href="#link-5" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-6" class="glossary-item">
+            <strong>[6] Holism:</strong> An analytical position that maintains that systems (physical, biological, social, etc.) and their properties must be analyzed as a whole, since the functioning of the "whole" is greater and different from the simple sum of its parts.
+            <a href="#link-6" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-7" class="glossary-item">
+            <strong>[7] Problem of induction:</strong> A philosophical questioning associated with thinkers like Karl Popper, which warns that observing a phenomenon repeatedly under certain empirical conditions does not guarantee that it will always behave exactly the same under any future circumstance.
+            <a href="#link-7" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-8" class="glossary-item">
+            <strong>[8] QA/QC (Quality Assurance / Quality Control):</strong> Terms originating in industry and the laboratory that refer to Quality Assurance (preventing defects in processes) and Quality Control (identifying flaws in results).
+            <a href="#link-8" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-9" class="glossary-item">
+            <strong>[9] Reductionism:</strong> A scientific and philosophical approach that attempts to understand and explain complex phenomena by dividing and analyzing them through their most fundamental and simple components.
+            <a href="#link-9" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-10" class="glossary-item">
+            <strong>[10] Genomic sequences:</strong> The exact order of the chemical bases (DNA letters) that make up the genetic material of an organism, providing the necessary instructions for its development and functioning.
+            <a href="#link-10" class="glossary-item-back-link">↩ back</a>
+        </li>
+        <li id="glosario-11" class="glossary-item">
+            <strong>[11] Technocracy (technocratic vision):</strong> A system or ideology where decisions and policies of society are made and dominated exclusively by technical and scientific experts, often leaving aside social, ethical, or human factors.
+            <a href="#link-11" class="glossary-item-back-link">↩ back</a>
+        </li>
+    </ul>
+</div>

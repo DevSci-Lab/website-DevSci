@@ -28,6 +28,9 @@
         {% set static_prefix = url_for('static', filename='assets/css/main.css')|replace('assets/css/main.css', '') %}
         {{ post.html|replace('src="/static/', 'src="' + static_prefix)|replace("src='/static/", "src='" + static_prefix)|safe }}
         <hr>
+        <div class="gofundme-banner" style="text-align: center; margin: 3em 0;">
+            <img src="{{ url_for('static', filename='images/gofundme_qr.png') }}" alt="GoFundMe QR Code" style="max-width: 350px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </div>
         <a href="{{ url_for('blog_list', lang=lang) }}" class="button">{{ 'Volver al Blog' if lang == 'es' else 'Back to
             Blog' }}</a>
     </div>
